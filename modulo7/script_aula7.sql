@@ -3,6 +3,8 @@
 CREATE USER 'leticia'@'localhost' IDENTIFIED BY 'faria123456';
 /* CREATE USER 'leticia'@'%' IDENTIFIED BY 'faria123456'; -- qualquer endereço de ip */
 
+-- não precisa usar o comando USE pq os acessos são a nível de servidor
+
 -- dar acesso ao usuário criado
 GRANT ALL ON curso_sql.* TO 'leticia'@'localhost';
 /* GRANT SELECT ON curso_sql TO 'leticia'@'%' */
